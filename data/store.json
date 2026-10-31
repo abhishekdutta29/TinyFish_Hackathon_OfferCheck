@@ -1,0 +1,205 @@
+{
+  "users": [
+    {
+      "id": "usr_581a5691",
+      "name": "Jane Defender",
+      "email": "tester_1793436941242@example.com",
+      "passwordHash": "95f1d89092f2e74f95d30b996637e31485633832dc63605095066fc5b92928440ee776968a129d9c685588c3946ade601911098a52dd4cb2b0bb209d6cc03865",
+      "salt": "9786a6953d611580110a4af13b508ee9",
+      "createdAt": "2026-10-31T08:55:41.251Z"
+    },
+    {
+      "id": "usr_6c9c60db",
+      "name": "Abhishek Dutta",
+      "email": "aabhishekdutta123@gmail.com",
+      "passwordHash": "6985ac65a2ced556099cb5989a2ac976ad786eb7d2e548a14819e0a205fbd3a8dec2b890d78253826018f4ee4f872bfde67874203d9174cccd03d25b7111d27d",
+      "salt": "99c04d53b5ac8ca4863418c3880d93ec",
+      "createdAt": "2026-10-31T09:47:26.953Z"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "8c434aeee4f0a3d891446ef1d2fbacc86a676cf3df15991310d6bb7547a97b21",
+      "userId": "usr_581a5691",
+      "expiresAt": "2026-11-30T08:55:41.263Z"
+    },
+    {
+      "token": "09c229868499004d98d712a418f066abc5ce58088dc0a13a9c4d0c067f9b44ac",
+      "userId": "usr_6c9c60db",
+      "expiresAt": "2026-11-30T09:47:26.957Z"
+    },
+    {
+      "token": "172cdc1a57040f802cfafeb101f4075a34a402414012f76a80f21554f40a590c",
+      "userId": "usr_6c9c60db",
+      "expiresAt": "2026-11-30T09:48:16.836Z"
+    }
+  ],
+  "records": [
+    {
+      "id": "rec_3bbe20de",
+      "userId": "usr_6c9c60db",
+      "companyName": "Forms",
+      "senderEmail": null,
+      "websiteUrl": "https://forms.cloud.microsoft/r/itHaWNwD5G",
+      "score": 35,
+      "verdict": "Likely Scam",
+      "extracted": {
+        "company_name": "Forms",
+        "sender_email": null,
+        "website_url": "https://forms.cloud.microsoft/r/itHaWNwD5G",
+        "phone": null,
+        "payment_demanded": {
+          "demanded": false,
+          "amount": null
+        },
+        "stipend": null,
+        "mentions_interview": false
+      },
+      "checks": [
+        {
+          "name": "Text Red Flags",
+          "status": "warn",
+          "points": -10,
+          "explanation": "Direct selection without any interview or formal assessment round mentioned.",
+          "links": []
+        },
+        {
+          "name": "Scam Reports",
+          "status": "fail",
+          "points": -25,
+          "explanation": "Found online complaints or discussions alleging scams or fake offers related to \"Forms\".",
+          "links": [
+            {
+              "title": "Online Employment Scams - Edmonton Police Service",
+              "url": "https://www.edmontonpolice.ca/CrimePrevention/PersonalFamilySafety/Frauds/OnlineScams/EmploymentScams"
+            },
+            {
+              "title": "Job Scams - FTC Consumer Advice",
+              "url": "https://consumer.ftc.gov/articles/job-scams"
+            },
+            {
+              "title": "Job Scam: Fake Offer Letters available. #JobScam #GoaNews ...",
+              "url": "https://www.facebook.com/PrudentMedia/posts/job-scam-fake-offer-letters-availablejobscam-goanews-goa-news-fakeoffer-fake/1671469935008351/"
+            }
+          ]
+        },
+        {
+          "name": "Website Verification",
+          "status": "warn",
+          "points": -10,
+          "explanation": "Website (https://forms.cloud.microsoft/r/itHaWNwD5G) is accessible but lacks a verifiable physical office address or official contact info.",
+          "links": [
+            {
+              "title": "Winter Academic Training and Internship Sign Up Form\nAcademic Advancement Program.",
+              "url": "https://forms.cloud.microsoft/r/itHaWNwD5G"
+            }
+          ]
+        },
+        {
+          "name": "Corporate Presence & Reviews",
+          "status": "pass",
+          "points": 20,
+          "explanation": "Verified presence on corporate registries (MCA/ZaubaCorp) and review platforms (Glassdoor/AmbitionBox).",
+          "links": [
+            {
+              "title": "MCA Reviews | Glassdoor",
+              "url": "https://www.glassdoor.co.in/Reviews/MCA-Reviews-E388362.htm"
+            },
+            {
+              "title": "MCA Worldwide Reviews by 5 Employees | Rated 4.4/5",
+              "url": "https://www.ambitionbox.com/reviews/mca-worldwide-reviews"
+            },
+            {
+              "title": "List of MCA Forms for Company Filings (Complete Guide 2026)",
+              "url": "https://razorpay.com/rize/blogs/list-of-mca-forms-for-company-filings-complete-guide-2026/"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-31T10:02:17.417Z"
+    },
+    {
+      "id": "rec_8ff11d96",
+      "userId": "usr_6c9c60db",
+      "companyName": "Elytespark Innovations Pvt. Ltd.",
+      "senderEmail": "hr@elytespark.org",
+      "websiteUrl": "https://www.elytespark.org",
+      "score": 55,
+      "verdict": "Suspicious",
+      "extracted": {
+        "company_name": "Elytespark Innovations Pvt. Ltd.",
+        "sender_email": "hr@elytespark.org",
+        "website_url": "https://www.elytespark.org",
+        "phone": null,
+        "payment_demanded": {
+          "demanded": false,
+          "amount": null
+        },
+        "stipend": null,
+        "mentions_interview": false
+      },
+      "checks": [
+        {
+          "name": "Text Red Flags",
+          "status": "warn",
+          "points": -10,
+          "explanation": "Direct selection without any interview or formal assessment round mentioned.",
+          "links": []
+        },
+        {
+          "name": "Scam Reports",
+          "status": "pass",
+          "points": 0,
+          "explanation": "No scam reports or fraud discussions identified for \"Elytespark Innovations Pvt. Ltd.\" in web search results.",
+          "links": [
+            {
+              "title": "Did someone get an internship invite from ElyteSpark ...",
+              "url": "https://www.reddit.com/r/indiafreshers/comments/1wjnsb2/did_someone_get_an_internship_invite_from/"
+            },
+            {
+              "title": "Elytespark",
+              "url": "https://in.linkedin.com/company/elytespark"
+            },
+            {
+              "title": "Elytespark Innovations Pvt Ltd Reviews by 4 Employees",
+              "url": "https://www.ambitionbox.com/reviews/elytespark-reviews"
+            }
+          ]
+        },
+        {
+          "name": "Website Verification",
+          "status": "fail",
+          "points": -15,
+          "explanation": "Company website (https://www.elytespark.org) returned empty content or failed to render.",
+          "links": [
+            {
+              "title": "https://www.elytespark.org",
+              "url": "https://www.elytespark.org"
+            }
+          ]
+        },
+        {
+          "name": "Corporate Presence & Reviews",
+          "status": "pass",
+          "points": 20,
+          "explanation": "Verified presence on corporate registries (MCA/ZaubaCorp) and review platforms (Glassdoor/AmbitionBox).",
+          "links": [
+            {
+              "title": "Elytespark Innovations Pvt Ltd Reviews by 4 Employees",
+              "url": "https://www.ambitionbox.com/reviews/elytespark-reviews"
+            },
+            {
+              "title": "ElyteSpark | Online Internships & Certification Courses",
+              "url": "https://elytespark.in/"
+            },
+            {
+              "title": "Life at Elytespark Innovations Pvt Ltd: Culture, Salary, Reviews ...",
+              "url": "https://www.ambitionbox.com/overview/elytespark-overview"
+            }
+          ]
+        }
+      ],
+      "createdAt": "2026-10-31T09:59:25.287Z"
+    }
+  ]
+}
